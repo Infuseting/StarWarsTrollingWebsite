@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Star Wars - Se connecter</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <a href="index.html"><input type="button" value="Retour" placeholder="Retour"></a>
+<form class="box" action="login.html" method="post">
+    <h1>Se connecter</h1>
+    <input type="text"  name="Username" placeholder="Username" >
+    <input type="password" name="Password" placeholder="Password" >
+    <input type="button" value="Se connecter" onclick="check(this.form)" placeholder="Login">
+</form>
+
+<script language="javascript">
+function check(form)
+    {
+    if(form.Username.value == "dev" && form.Password.value == "dev")
+        {
+            window.open('https://magic.wizards.com/fr')
+            window.location.href="index.html";
+        }
+        else {
+            alert("Le nom d'utilisateur et/ou le mots de passe ne sont pas correct.")
+
+
+        }
+    }
+</script>
+</body>
+
+
+</html>
